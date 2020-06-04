@@ -35,12 +35,17 @@ $(document).ready(function(){
 
 	var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
 	{
+		mp3: "http://live.radioclick.ro:8008/;",
 		m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
 		oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
 	}, {
 		cssSelectorAncestor: "#cp_container_1",
 		swfPath: "../../dist/jplayer",
 		wmode: "window",
+		supplied: "mp3",
+		autoBlur: true,
+		preload: "none",
+		useStateClassSkin: true,
 		keyEnabled: true
 	});
 });
