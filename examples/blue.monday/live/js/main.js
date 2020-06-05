@@ -25,7 +25,7 @@ $(function(){
 			}
 		},
 		solution:"html",
-		swfPath: "./_js",
+		swfPath: "../../dist/jplayer",
 		supplied: "mp3",
 		preload: "none",
 		wmode: "window"
