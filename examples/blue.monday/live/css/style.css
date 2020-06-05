@@ -1,0 +1,114 @@
+/** import & load **/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/** Create nice canvas to work on **/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+/** Player styles **/
+.player {
+	position:relative;
+	
+	width:730px;
+	height:202px;
+	
+	background:rgb(240,243,248);
+	border-radius:8px;
+}
+#stationlogo {
+	position:absolute;
+	width:180px;
+	height:180px;
+	margin:10px;
+	box-shadow:0 0 2px 3px #888;
+	border: 1px solid rgb(0, 0, 0);
+}
+#nowplaying {
+	position:absolute;
+	right:0;
+	margin:12px;
+	
+	width:500px;
+	height:120px;
+	border-radius:5px;
+	
+	box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	background: #d3d8ba; /* Old browsers */
+	background: -moz-linear-gradient(top, #d3d8ba 0%, #ebedd5 50%, #cacdb2 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d3d8ba), color-stop(50%,#ebedd5), color-stop(100%,#cacdb2)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d3d8ba 0%,#ebedd5 50%,#cacdb2 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d3d8ba 0%,#ebedd5 50%,#cacdb2 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d3d8ba 0%,#ebedd5 50%,#cacdb2 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d3d8ba 0%,#ebedd5 50%,#cacdb2 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d3d8ba', endColorstr='#cacdb2',GradientType=0 ); /* IE6-9 */
+}
+.popout {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+#albumcover {
+	position:absolute;
+	left:0;
+	margin:8px;
+	
+	width:80px;
+	height:80px;
+	
+	background:url("../_img/ls.png");
+	background-size:100%;
+	box-shadow: 5px 5px 3px rgba(0,0,0,0.2);
+}
+#current {
+	position: absolute;
+	right: 0px;
+	margin: 25px 14px;
+	width: 380px;
+	height: 62px;
+	text-align:center;
+	color:rgb(105,101,98);
+}
+.big { font-size:1.5em; }
+.artist {
+	font-weight:bold;
+}
+.title {
+
+}
+
+#station {
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	width: 500px;
+	height: 25px;
+	text-align: center;
+	font-size:18px;
+	color: rgb(105, 101, 98);
+}
+.station {
+	font-style:italic;
+}
+.logo { 
+position: absolute;
+right: 119px;
+bottom: 20px;
+width: 50px;
+}
+.links { 
+line-height: 20px;
+position:absolute;
+right:15px;
+bottom:4px;
+width:20px;
+}
+a img {
+border-style: none;
+}
